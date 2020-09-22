@@ -6,6 +6,8 @@ class Student {
 
 $this->surname = '';
 
+$this->status = '';
+
 $this->first_name = '';
 
 $this->emails = array();
@@ -33,7 +35,7 @@ $total += $value; return $total / count($this->grades);
 }
 function toString() {
 
-$result = $this->first_name . ' ' . $this->surname;
+$result = $this->first_name . ' ' . $this->surname .  $this->status ;
 
 $result .= ' ('.$this->average().")\n"; foreach($this->emails as $which=>$what)
 
